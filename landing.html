@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Website title and creating links to Bootstrap and CSS-->
+<head>
+<!--Adding style to justify text for document.-->
+<style> p{
+    text-align: justify;
+    text-justify: inter-word;}
+    h1{
+    text-align: justify;
+    text-justify: inter-word;}
+</style>
+  <meta charset="UTF-8">
+  <title>Web Visualization Dashboard (Latitude)</title>
+  <!--Links to add Bootstrap and css to give structure to the entire page-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="weather.css">
+<!--Adding script for drop down buttun-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+<!--Adding Main page button to the Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light lg-light">
+      <a class="navbar-brand" href="landing.html">Latitude</a>
+<!--Creating condition that will allow us add hooks to the links-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>    
+<!--Creating links using ml-auto to add to the Right of the Navigation Bar-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+<!--Creating Dropdown list in the Dropdown menu. Define list class as Dropdown Item-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Visualization1.html">Max Temperature</a>
+              <a class="dropdown-item" href="Visualization2.html">Humidity</a>
+              <a class="dropdown-item" href="Visualization3.html">Cloudness</a>
+              <a class="dropdown-item" href="Visualization4.html">Wind Speed</a>
+              <!-- <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">Learn More!</a> -->
+            </div>
+          </li>
+<!--Add Comparison and Data links to the Navigation Bar-->
+          <li class="nav-item active">
+            <a class="nav-link" href="Comparisons.html">Comparison<span class="sr-only">(current)</span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="Data.html">Data<span class="sr-only">(current)</span></a>   
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<!--Create container and Row classes to hold page content-->
+  <div class = "container1">
+    <section class="row">   
+<!--First Column in this Row-->
+      <div class="col-md-7">
+        <div class="box">
+          <h1><strong> Summary: Latitude vs. X</strong></h1>
+          <div class="col-xs-12"><hr></div>
+          <img src="Images\Fig1.png" class="rounded float-left" alt="Latitude" width="400" height="300">
+          <p>The purpose of this project was to analyse how the weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a database of over 500 cities. </p>
+          <p></p>
+          <p>After assembling the dataset, we used matplotlib to plot various aspects of the weather vs. latitude.Factors we looked at included: 
+            temperature, cloudness, wind speed and humidity. This site provides source data visualizations created as part of the analysis, as well as explanations and descriptions of any correlations and trends witnessed.
+          </p>
+        </div>
+      </div>
+<!--Second Column in this Row-->
+      <div class="col-md-5">
+        <div class="box1">
+          <h1><strong>Visualizations</strong></h1>
+          <div class="col-xs-12"><hr></div>
+            <article></article>
+              <a target="_blank" href="images/Fig1.png">
+              <img src="Images\Fig1.png" class="topLeft" alt="Latitude" width="200" height="150">
+              </a>
+              <a target="_blank" href="images/Fig2.png">
+              <img src="Images\Fig2.png" class="topRight" alt="Latitude" width="200" height="150">
+              </a>
+              <a target="_blank" href="images/Fig3.png">
+              <img src="Images\Fig3.png" class="bottomRight" alt="Latitude" width="200" height="150">
+              </a>
+              <a target="_blank" href="images/Fig4.png">
+              <img src="Images\Fig4.png" class="bottomLeft" alt="Latitude" width="200" height="150">
+              </a>
+            </article>
+      </div>
+  </div>
+</body>
+</html>

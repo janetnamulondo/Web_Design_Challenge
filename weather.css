@@ -1,0 +1,126 @@
+
+.navbar-brand {
+  background: rgb(233, 175, 223);
+  padding: 10px;
+  color: white;
+}
+
+.container1 {
+  background: rgba(201, 197, 197, 0.432);
+  text-align: center;
+ }
+
+.box {
+    height: 500px;
+    padding: 20px;
+    color:rgb(20, 20, 20);
+    background: white;
+    margin-top: 40px;
+    margin-left:40px;
+    margin-bottom: 80px;
+  }
+
+.box1 {
+    height: 450px;
+    padding: 20px;
+    color: rgb(20, 20, 20);
+    background: white;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+.box2 {
+    height: 500px;
+    padding: 20px;
+    color: rgb(20, 20, 20);
+    background: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+/* .box5 {
+    height: 500px;
+    padding: 20px;
+    color: rgb(20, 20, 20);
+    background: white;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  } */
+.data {
+  height: 2000px;
+  padding: 20px;
+  color: rgb(20, 20, 20);
+  background: white;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.Bottom-left {
+  display: block;
+  margin-left: auto;
+}
+
+.border1{
+  border:2px solid #4aa54a;
+}
+.border2{
+  border:2px solid #4aa54a;
+}
+.border3{
+  border:2px solid #4aa54a;
+}
+.border4{
+  border:2px solid #4aa54a;
+}
+
+
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 480 pixels */
+  @media (max-width: 480px)
+  {
+    .box {
+      height: 200px;
+      width: 480px;
+    }
+  
+   .box1 {
+      height: 200px;
+      width: 480px;
+    }
+
+    .box2 {
+      height: 200px;
+      width: 480px;
+    }
+
+    .data {
+      height: 200px;
+      width: 480px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    
+  }
+.img-row{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.img-col {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.img-elem {
+  display: block;
+  width: 100%;
+  height: auto;
+}
